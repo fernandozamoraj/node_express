@@ -5,15 +5,15 @@ The primary goal of this application is to provide an easy to understand demo of
 
 ## Concepts Demonstrated
 
-...use of .gitignore file
-...use of require for npm modules
-...use of require for propietary modules (e.g. routing and model)
-...use body-parser to parse the post method
-...use of body-parser to send json response
-...use of router to route to html files (e.g. htmlRoutes)
-...use of router to route to api resources (e.g. apiRoutes)
-...routing to a custom 404 page
-...calling post from client side code with $.post (e.g. todo.html script)
+1. use of .gitignore file
+2. use of require for npm modules
+3. use of require for propietary modules (e.g. routing and model)
+4. use body-parser to parse the post method
+5. use of body-parser to send json response
+6. use of router to route to html files (e.g. htmlRoutes)
+7. use of router to route to api resources (e.g. apiRoutes)
+8. routing to a custom 404 page
+9. calling post from client side code with $.post (e.g. todo.html script)
 
 
 ## How to download and run
