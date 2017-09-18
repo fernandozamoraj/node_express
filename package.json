@@ -1,0 +1,28 @@
+{
+  "name": "todoapp",
+  "version": "0.0.1",
+  "description": "\"Demo app that uses basic html, REST services, express\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandozamoraj/node_express.git"
+  },
+  "dependencies": {
+    "node":"8.3.0",
+    "express":"^4.15.4",
+    "body-parser":"1.18.1"
+  },
+  "keywords": [
+    "express",
+    "todo"
+  ],
+  "author": "fernando <fernandozamoraj@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fernandozamoraj/node_express/issues"
+  },
+  "homepage": "https://github.com/fernandozamoraj/node_express#readme"
+}
