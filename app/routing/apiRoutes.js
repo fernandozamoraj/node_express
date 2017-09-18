@@ -5,7 +5,7 @@ let todoModel = require("../model/todo")
 function configureRoutes(app){
 
     let router = express.Router();
-    let usage = { usage: "GET /api/todo POST /api/TODO with params todo"}
+    let usage = { usage: "GET /api/todo POST /api/todo with params todo"}
 
 
     app.use(bodyParser.urlencoded({ extended: true }));
