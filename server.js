@@ -1,20 +1,24 @@
 let express = require("express")
 let bodyParser = require("body-parser")
+let htmlRoutes = require("./app/routing/htmlRoutes")
+let apiRoutes = require("./app/routing/apiRoutes")
+let path = require("path")
 
+let publicPath = path.join(__dirname + "/app/public/")
 
 let app = express();
 
+let port = process.env.PORT || 3000
 
-app.use("/", function(req, res){
-    res.send("Hi from todo app")
+
+apiRoutes(app)
+htmlRoutes(app)
+
+app.get("/*", function(req, res){
+    res.sendFile(path.join(publicPath + "404.html"))
 })
 
-app.use("*", function(req, res){
-    req.statusCode(404).send("Oops! It looks like the resource that you requested is not available")
-})
-
-
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("todoapp listening on port 3000")
 })
 
