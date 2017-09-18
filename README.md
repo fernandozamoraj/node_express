@@ -15,3 +15,13 @@ The primary goal of this application is to provide an easy to understand demo of
 ...routing to a custom 404 page
 ...calling post from client side code with $.post (e.g. todo.html script)
 
+---
+# How to download and run
+
+1. Download Node 
+2. Download this source code by either cloning or downloading the zip file
+3. Navigate to the directory in todoapp
+4. Run the command `npm install` that will install all your module depencies
+5. Run the command `node server.js` to run the application
+6. The application runs on port 3000. Navigate to `http://localhost:3000`
+
