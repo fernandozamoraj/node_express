@@ -11,8 +11,8 @@ let app = express();
 let port = process.env.PORT || 3000
 
 
-apiRoutes(app)
-htmlRoutes(app)
+apiRoutes.configure(app)
+htmlRoutes.configure(app)
 
 app.get("/*", function(req, res){
     res.sendFile(path.join(publicPath + "404.html"))

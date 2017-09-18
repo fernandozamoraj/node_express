@@ -38,4 +38,6 @@ function configureRoutes(app){
     app.use("/", router)
 }
 
-module.exports = configureRoutes
+module.exports = { 
+    configure : configureRoutes 
+}
