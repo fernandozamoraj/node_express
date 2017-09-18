@@ -2,10 +2,52 @@
 <html>
     <head>
         <title>Todo App</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script>
+            function onSubmitDone(data){
+                alert("Your submit succeeded response message is: '" + data.message +"'")
+                console.log(data.message)
+            }
+
+            function onSubmitFailed(err){
+                alert("Your submit failed")
+            }
+
+            //This method will complete always
+            //after the done if successful OR
+            //after the fail if not successful
+            function onSubmitFinished(){
+                console.log("Submit finished")
+            }
+            
+            $(document).ready(function(){
+                 $("#submit").click(function(){
+                
+                       let todoVal = $("#todo").val() 
+                       $.post("/api/todo", 
+                            {todo: todoVal})
+                            .done( onSubmitDone)
+                            .fail( onSubmitFailed)
+                            .always( onSubmitFinished)                      
+
+                 })   
+            })
+        </script>
     </head>
     <body>
         <div class="main container">
             <h2>ToDo Entry Form</h2>
+            <br><br>
+            <h2>Add todo:</h2>
+            <input type="text" id="todo" class="form-control"> <br><br>
+            <button id="submit" type="submit" value="submit" class="btn btn-large">SUBMIT</button>
+
+            <br><br><br><br>
+            <footer>
+                <a "/api">Todos API</a> | <a "/api/tpdp">GET todos</a> 
+            </footer>
         </div>
+
     </body>
 </html>
