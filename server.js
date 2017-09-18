@@ -10,7 +10,6 @@ let app = express();
 
 let port = process.env.PORT || 3000
 
-
 apiRoutes.configure(app)
 htmlRoutes.configure(app)
 
