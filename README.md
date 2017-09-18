@@ -19,7 +19,7 @@ The primary goal of this application is to provide an easy to understand demo of
 ## How to download and run
 
 1. Download Node from [nodejs.org] (https://nodejs.org/en/)
-2. Download this source code by either cloning or downloading the zip file from the (git repo)[https://github.com/fernandozamoraj/node_express]
+2. Download this source code by either cloning or downloading the zip file from the [git repo](https://github.com/fernandozamoraj/node_express)
 3. Navigate to the directory in todoapp
 4. Run the command `npm install` that will install all your module dependencies
 5. Run the command `node server.js` to run the application
