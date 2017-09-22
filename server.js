@@ -13,6 +13,10 @@ let port = process.env.PORT || 3000
 apiRoutes.configure(app)
 htmlRoutes.configure(app)
 
+console.log("using...")
+console.log(publicPath)
+app.use(express.static(publicPath))
+
 app.get("/*", function(req, res){
     res.sendFile(path.join(publicPath + "404.html"))
 })

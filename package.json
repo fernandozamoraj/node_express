@@ -13,7 +13,8 @@
   "dependencies": {
      "express":"^4.15.4",
     "body-parser":"1.18.1",
-    "path":"0.12.7"
+    "path":"0.12.7",
+    "handlebars":"4.0.10"
   },
   "keywords": [
     "express",
